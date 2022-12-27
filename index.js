@@ -7,8 +7,7 @@ const postsRoutes = require("./routes/blogs");
 const secret = "RESTAPIAUTH";
 var Jwt = require('jsonwebtoken');
 const bodyparser = require("body-parser");
-const port = 3000
-
+const port = 8080
 const app = express();
 app.use(bodyparser.json());
 
@@ -43,8 +42,6 @@ app.use('/api/v1/posts', (req, res, next) => {
     // console.log(token)
 
 })
-
-
 
 app.use('/api/v1/users', loginRoutes)
 app.use('/api/v1/', postsRoutes)
