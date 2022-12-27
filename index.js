@@ -7,7 +7,7 @@ const postsRoutes = require("./routes/blogs");
 const secret = "RESTAPIAUTH";
 var Jwt = require('jsonwebtoken');
 const bodyparser = require("body-parser");
-const port = 8080
+const port = 8000
 const app = express();
 app.use(bodyparser.json());
 
